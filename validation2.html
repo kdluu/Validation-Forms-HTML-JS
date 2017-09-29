@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset = "utf-8"/>
+    <script src="./validation2.js"></script>
+    <title>Contact Information</title>
+  </head>
+<body>
+<h1>
+  Contact Information
+</h1>
+<form id="myForm" action="/map.html"method="post">
+      <fieldset>
+      <legend>Contact Information</legend>
+      <p id="Email">
+        <label for="email">Email</label>
+        <input name="email" type="text" />
+
+      <p id="Phone">
+        <label for="phone">Phone</label>
+        <input  name="phone" type="text" />
+      </p>
+
+      <p id = "Address">
+        <label for ="address">Address</label>
+        <!-- <input name="adress" type="text"/> -->
+      </p>
+      <p id="City">
+        <label for="city">City:</label>
+        <input name="city" type="text" />
+      </p>
+
+      <p>
+        <p id="state">
+          State
+          <select name="state">
+            <option>Select...   </option>
+            <option>California</option>
+            <option>Florida</option>
+            <option>NewYork</option>
+            <option>Texas</option>
+            <option>Hawaii</option>
+            <option>Washington</option>
+            <option>Colorado</option>
+            <option>Virginia</option>
+            <option>Iowa</option>
+            <option>Arizona</option>
+          </select>
+
+      </p>
+
+        <input onCLick="validate2()" type="button" id="continue" name="continue" value="Submit"/>
+
+  </fieldset>
+    </form>
+</body>
+</html>

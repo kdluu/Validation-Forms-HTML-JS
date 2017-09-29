@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset = "utf-8"/>
+<script src="./validation1.js"></script>
+<title>Validation Form</title>
+</head>
+<body>
+<h1>
+Validation Form
+</h1>
+  <form id="myForm" action="/validation2.html"method="post">
+      <legend>Validation Form</legend>
+      <p id="Fname">
+        <label for="fname">First Name</label>
+        <input name="fname" type="text" />
+      </p>
+      <p id="Lname">
+        <label for="lname">Last Name</label>
+        <input name="lname" type="text" />
+      </p>
+      <p>
+          <p id ="gender">
+          Gender
+          <select name="gender">
+          <option>Select...   </option>
+          <option>Male</option>
+          <option>Female</option>
+          </select>
+          <span id="errgender"><span>
+      </p>
+      <p>
+        <p id="state">
+          State
+          <select name="state">
+            <option>Select...   </option>
+            <option>California</option>
+            <option>Florida</option>
+            <option>NewYork</option>
+            <option>Texas</option>
+            <option>Hawaii</option>
+            <option>Washington</option>
+            <option>Colorado</option>
+            <option>Virginia</option>
+            <option>Iowa</option>
+            <option>Arizona</option>
+          </select>
+      </p>
+
+        <input onCLick="validate1()" type="button" id="continue" name="continue" value="Continue"/>
+
+    </form>
+</body>
+</html>
